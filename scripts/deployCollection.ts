@@ -7,7 +7,7 @@ export async function run(provider: NetworkProvider) {
     const OWNER_ADDRESS = Address.parse('UQAJ66BxA4ck92h9CVrSE3ES6bYK_xhzxBwN_oXd01Isn-fZ');
 
     const modelName = await ui.input('Model name (z.B. layla, christine):');
-    const BASE_URL = `https://deutsche-onlyfans.blog/nft/${modelName}/`;
+    const BASE_URL = `https://raw.githubusercontent.com/flow-84/dof-nft/main/metadata/${modelName}/`;
 
     const content = buildCollectionContentCell(BASE_URL);
 

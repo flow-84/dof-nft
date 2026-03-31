@@ -1,10 +1,23 @@
 {
   "name": "Christine Sticker #2",
-  "description": "NFT Sticker #2 aus der Christine Collection. Sammle alle 12 fuer einen exklusiven Videogruss.",
-  "image": "",
+  "description": "Christine sitzt auf einer Steinmauer im Sommerkleid — entspannt in der Natur.",
+  "image": "https://raw.githubusercontent.com/flow-84/dof-nft/main/metadata/christine/images/1.jpg",
   "attributes": [
-    { "trait_type": "Model", "value": "Christine" },
-    { "trait_type": "Sticker Nr.", "value": "2" },
-    { "trait_type": "Typ", "value": "Gratis" }
+    {
+      "trait_type": "Model",
+      "value": "Christine"
+    },
+    {
+      "trait_type": "Sticker Nr.",
+      "value": "2"
+    },
+    {
+      "trait_type": "Typ",
+      "value": "Gratis"
+    },
+    {
+      "trait_type": "Setting",
+      "value": "Outdoor"
+    }
   ]
 }

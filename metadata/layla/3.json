@@ -1,10 +1,23 @@
 {
   "name": "Layla Sticker #4",
-  "description": "NFT Sticker #4 aus der Layla Collection. Sammle alle 12 fuer einen exklusiven Videogruss.",
-  "image": "",
+  "description": "Layla am Strand — Ruecken zur Kamera, Arm im Nacken, Bikini, Meerblick.",
+  "image": "https://raw.githubusercontent.com/flow-84/dof-nft/main/metadata/layla/images/3.jpg",
   "attributes": [
-    { "trait_type": "Model", "value": "Layla" },
-    { "trait_type": "Sticker Nr.", "value": "4" },
-    { "trait_type": "Typ", "value": "Premium" }
+    {
+      "trait_type": "Model",
+      "value": "Layla"
+    },
+    {
+      "trait_type": "Sticker Nr.",
+      "value": "4"
+    },
+    {
+      "trait_type": "Typ",
+      "value": "Premium"
+    },
+    {
+      "trait_type": "Setting",
+      "value": "Strand"
+    }
   ]
 }

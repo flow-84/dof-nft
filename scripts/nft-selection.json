@@ -1,0 +1,36 @@
+{
+  "layla": {
+    "model": "Layla",
+    "images": [
+      { "nftIndex": 0, "originalIndex": 2, "fileId": "13ZshzOUw8hO81dkvFvcq-vh7-LsArbYC", "fileName": "IMG_9438.JPG", "setting": "Felsen/Kueste", "description": "Stehend, Arm ueber Kopf, gruenes Dessous, Felsen + blauer Himmel" },
+      { "nftIndex": 1, "originalIndex": 8, "fileId": "1vaudzMuIjIKafNAFqC0KdiR_sWA-hW2V", "fileName": "IMG_9422.JPG", "setting": "Felsen/Kueste", "description": "An Felsen gelehnt, Blick in Himmel, entspannt" },
+      { "nftIndex": 2, "originalIndex": 13, "fileId": "18pggGdglJMfpCHYd9Zz2F_Y9JUsuXCeh", "fileName": "IMG_9421.JPG", "setting": "Felsen/Kueste", "description": "Verfuehrerisch sitzend, Blick in Kamera" },
+      { "nftIndex": 3, "originalIndex": 27, "fileId": "1xJy-Ix9dor2fCRL7qe3lSLjY4tkDVem9", "fileName": "IMG_9390.JPG", "setting": "Strand", "description": "Ruecken zur Kamera, Arm im Nacken, Bikini" },
+      { "nftIndex": 4, "originalIndex": 32, "fileId": "1mnlj64AABTBc7sqe3SD4bh6CsAMehsGu", "fileName": "IMG_9386.JPG", "setting": "Strand", "description": "Steht aufrecht, Blick zur Seite" },
+      { "nftIndex": 5, "originalIndex": 39, "fileId": "1v7G93_4veg2OF-a1W3VF0bSXjRjKJcTN", "fileName": "IMG_9383.JPG", "setting": "Strand", "description": "Sonnenbrille, Bikini, stehend" },
+      { "nftIndex": 6, "originalIndex": 34, "fileId": "17TAep-fVDOl7ZEpj37VKZ1kpvTI_hRPL", "fileName": "IMG_9375.JPG", "setting": "Bett", "description": "Rueckenlage, Blick in Kamera" },
+      { "nftIndex": 7, "originalIndex": 42, "fileId": "1A_Sy4A1I9XQ7aWQ-NogryRlz7L8_0sHZ", "fileName": "IMG_9372.JPG", "setting": "Bett", "description": "Auf Ruecken, Beine hochgestreckt, kreativ" },
+      { "nftIndex": 8, "originalIndex": 50, "fileId": "1aBm9MfmcJsnBN4JCPj-aEfuf5GprVMQ0", "fileName": "IMG_9362.JPG", "setting": "Bett", "description": "Entspannt sitzend, schwarzer Dessous" },
+      { "nftIndex": 9, "originalIndex": 35, "fileId": "1Mn7EL22sSPJFeyDRKdidweuClPnTeDKp", "fileName": "IMG_9292.JPG", "setting": "Spiegel", "description": "Spiegel-Selfie, schwarze Unterwaesche" },
+      { "nftIndex": 10, "originalIndex": 23, "fileId": "1Xoxtvtn-sj9DIjIa3zvXA9eK2BbFTJMx", "fileName": "IMG_9409.JPG", "setting": "Indoor", "description": "Laechelnd mit Brille und Ohrringen" },
+      { "nftIndex": 11, "originalIndex": 60, "fileId": "1dBhQYJ13hKb4K1IFH7Ufgz9kM7ZGRqiN", "fileName": "IMG_9381.JPG", "setting": "Indoor", "description": "Arm im Nacken, orangefarbener Zweiteiler" }
+    ]
+  },
+  "christine": {
+    "model": "Christine",
+    "images": [
+      { "nftIndex": 0, "originalIndex": 5, "fileId": "1mXgyqrJKydxoMzQ5FIyUOW5ZUflJIESa", "fileName": "9C65EB55-C841-4032-A58E-A7DFB3010888.jpg", "setting": "Portrait", "description": "Laechelnd, schraeger Kopf, direkt in Kamera" },
+      { "nftIndex": 1, "originalIndex": 6, "fileId": "1UbCUeQG7tb7iFb5eOThgshuVvtFUBFg2", "fileName": "IMG_5702.PNG", "setting": "Outdoor", "description": "Sitzend auf Steinmauer, Sommerkleid" },
+      { "nftIndex": 2, "originalIndex": 8, "fileId": "1cEVVf-rEeDKZqGNTcGbX6WWoelniDpNc", "fileName": "IMG_6565.HEIC", "setting": "Strand", "description": "Ruecken zur Kamera, am Strand, blond" },
+      { "nftIndex": 3, "originalIndex": 12, "fileId": "1eGmaMIM0XcpNiZQ7V0KZmHBiK59iA7bP", "fileName": "IMG_2151.HEIC", "setting": "Badezimmer", "description": "Gelbes Handtuch, teilweise bedeckt" },
+      { "nftIndex": 4, "originalIndex": 15, "fileId": "1eAkLGEQ59kgxalU7VHz2T8WJlPHY3Sxb", "fileName": "5D888F30-2B6C-4C06-B641-242E8A8C9A1E.jpg", "setting": "Indoor", "description": "Sofa, weisses Oberteil, entspannt" },
+      { "nftIndex": 5, "originalIndex": 19, "fileId": "1Ghz78EJJ6bb0Qq24Ne5j3TSETgpoxX3V", "fileName": "IMG_9742.HEIC", "setting": "Spiegel", "description": "Weisse Spitze-Dessous, Spiegel-Selfie" },
+      { "nftIndex": 6, "originalIndex": 22, "fileId": "16yW-ty32g3bAsNhdkrSTujL0E2_AbRra", "fileName": "IMG_8247.HEIC", "setting": "Yoga", "description": "Lotussitz auf Yogamatte, weisser BH" },
+      { "nftIndex": 7, "originalIndex": 35, "fileId": "1E6ny1gtWBzbuppeQIMRSRO3t6RbJkkXB", "fileName": "IMG_9188.HEIC", "setting": "Strand", "description": "Liegend auf Strandtuch, Blick in Kamera" },
+      { "nftIndex": 8, "originalIndex": 36, "fileId": "1I2iEaRg8XC1pe7COh_mRs1xe9y_GbgwW", "fileName": "IMG_9564.HEIC", "setting": "Badewanne", "description": "In Badewanne, Seifenschaum" },
+      { "nftIndex": 9, "originalIndex": 46, "fileId": "11cRFOhLnPLJmcxi6akfI1V6jsn2wXqjn", "fileName": "C1531753-F957-450B-B3C0-B70C2E675817.jpg", "setting": "Strand", "description": "Bikini, Sonnenbrille, laechelnd" },
+      { "nftIndex": 10, "originalIndex": 50, "fileId": "1_uDyIotVpUsb_P3-rEtUlQzpXdWzEhFK", "fileName": "351b8298-3a38-42b5-8303-30cd20d51434.jpg", "setting": "Indoor", "description": "Weisse Spitze Unterwaesche, Stuhl" },
+      { "nftIndex": 11, "originalIndex": 53, "fileId": "1CWz07Ko4xbSb5YYNUi3yGQ_Tx0rmNwC1", "fileName": "bbb3909c-2d42-4546-90c2-02fa9fd8a163.jpg", "setting": "Indoor", "description": "Leoparden-Print, weisse Bank" }
+    ]
+  }
+}

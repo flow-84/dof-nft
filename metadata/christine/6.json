@@ -1,10 +1,23 @@
 {
   "name": "Christine Sticker #7",
-  "description": "NFT Sticker #7 aus der Christine Collection. Sammle alle 12 fuer einen exklusiven Videogruss.",
-  "image": "",
+  "description": "Christine im Lotussitz auf der Yogamatte — sportlich und ausgeglichen.",
+  "image": "https://raw.githubusercontent.com/flow-84/dof-nft/main/metadata/christine/images/6.jpg",
   "attributes": [
-    { "trait_type": "Model", "value": "Christine" },
-    { "trait_type": "Sticker Nr.", "value": "7" },
-    { "trait_type": "Typ", "value": "Premium" }
+    {
+      "trait_type": "Model",
+      "value": "Christine"
+    },
+    {
+      "trait_type": "Sticker Nr.",
+      "value": "7"
+    },
+    {
+      "trait_type": "Typ",
+      "value": "Premium"
+    },
+    {
+      "trait_type": "Setting",
+      "value": "Yoga"
+    }
   ]
 }

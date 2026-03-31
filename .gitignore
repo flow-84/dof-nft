@@ -5,3 +5,6 @@ temp/
 .tact/
 *.boc
 .DS_Store
+metadata/*/originals/
+drive-images.json
+softcore-images.txt
