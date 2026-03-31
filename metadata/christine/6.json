@@ -1,0 +1,10 @@
+{
+  "name": "Christine Sticker #7",
+  "description": "NFT Sticker #7 aus der Christine Collection. Sammle alle 12 fuer einen exklusiven Videogruss.",
+  "image": "",
+  "attributes": [
+    { "trait_type": "Model", "value": "Christine" },
+    { "trait_type": "Sticker Nr.", "value": "7" },
+    { "trait_type": "Typ", "value": "Premium" }
+  ]
+}

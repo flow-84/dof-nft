@@ -1,0 +1,24 @@
+{
+  "name": "dof-nft",
+  "version": "1.0.0",
+  "description": "DOF NFT Sticker Collections - Model Sticker NFTs auf TON Blockchain",
+  "scripts": {
+    "build": "npx blueprint build",
+    "test": "jest",
+    "deploy": "npx blueprint run deployCollection",
+    "mint": "npx blueprint run mintBatch"
+  },
+  "devDependencies": {
+    "@ton/blueprint": "^0.44.0",
+    "@ton/core": "^0.63.1",
+    "@ton/crypto": "^3.3.0",
+    "@ton/sandbox": "^0.40.0",
+    "@ton/test-utils": "^0.7.0",
+    "@ton/ton": "^16.2.3",
+    "@tact-lang/compiler": "^1.5.0",
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.4.0"
+  }
+}

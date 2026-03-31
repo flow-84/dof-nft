@@ -1,0 +1,10 @@
+{
+  "name": "Layla Sticker #5",
+  "description": "NFT Sticker #5 aus der Layla Collection. Sammle alle 12 fuer einen exklusiven Videogruss.",
+  "image": "",
+  "attributes": [
+    { "trait_type": "Model", "value": "Layla" },
+    { "trait_type": "Sticker Nr.", "value": "5" },
+    { "trait_type": "Typ", "value": "Premium" }
+  ]
+}
