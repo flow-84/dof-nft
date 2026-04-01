@@ -9,6 +9,11 @@ const selection = JSON.parse(fs.readFileSync(path.join(__dirname, 'nft-selection
 const BASE_URL = 'https://raw.githubusercontent.com/flow-84/dof-nft/main/metadata';
 const METADATA_DIR = path.join(__dirname, '..', 'metadata');
 
+const ofLinks: Record<string, string> = {
+    layla: 'https://tinyurl.com/2cframgd',
+    christine: 'https://tinyurl.com/2952mt79',
+};
+
 const stickerDescriptions: Record<string, string[]> = {
     layla: [
         'Layla posiert mit Arm ueber Kopf auf Felsen an der Kueste — gruenes Dessous, blauer Himmel.',
@@ -20,7 +25,7 @@ const stickerDescriptions: Record<string, string[]> = {
         'Layla liegt in Rueckenlage auf dem Bett und blickt in die Kamera — intim und direkt.',
         'Layla auf dem Bett mit Beinen hochgestreckt — kreative, verspielte Pose.',
         'Layla sitzt entspannt auf dem Bett in schwarzem Dessous — elegant und sinnlich.',
-        'Layla macht ein Spiegel-Selfie in schwarzer Unterwaesche — lässig und authentisch.',
+        'Layla macht ein Spiegel-Selfie in schwarzer Unterwaesche — laessig und authentisch.',
         'Layla laechelt mit Brille und Ohrringen — Persoenlichkeit pur.',
         'Layla posiert mit Arm im Nacken in orangefarbenem Zweiteiler — stylish und selbstbewusst.',
     ],
@@ -47,12 +52,12 @@ function updateMetadata() {
         const modelName = model.model as string;
         const descriptions = stickerDescriptions[modelKey];
 
-        // Update collection.json
-        const collectionPath = path.join(modelDir, 'collection.json');
+        // Update meta.json (collection metadata)
+        const collectionPath = path.join(modelDir, 'meta.json');
         const collection = JSON.parse(fs.readFileSync(collectionPath, 'utf8'));
         collection.image = `${BASE_URL}/${modelKey}/images/0.jpg`;
         fs.writeFileSync(collectionPath, JSON.stringify(collection, null, 2) + '\n');
-        console.log(`${modelName}: collection.json updated`);
+        console.log(`${modelName}: meta.json updated`);
 
         // Update individual item metadata
         for (let i = 0; i < 12; i++) {
@@ -62,7 +67,7 @@ function updateMetadata() {
 
             const item = {
                 name: `${modelName} Sticker #${stickerNum}`,
-                description: descriptions[i],
+                description: `${descriptions[i]} OnlyFans: ${ofLinks[modelKey]}`,
                 image: `${BASE_URL}/${modelKey}/images/${i}.jpg`,
                 attributes: [
                     { trait_type: 'Model', value: modelName },
