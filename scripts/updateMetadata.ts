@@ -67,7 +67,7 @@ function updateMetadata() {
 
             const item = {
                 name: `${modelName} Sticker #${stickerNum}`,
-                description: `${descriptions[i]} OnlyFans: ${ofLinks[modelKey]}`,
+                description: `${descriptions[i]} Mehr von ${modelName}: ${ofLinks[modelKey]}`,
                 image: `${BASE_URL}/${modelKey}/images/${i}.jpg`,
                 attributes: [
                     { trait_type: 'Model', value: modelName },
