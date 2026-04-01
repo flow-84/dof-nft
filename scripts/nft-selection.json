@@ -2,9 +2,9 @@
   "layla": {
     "model": "Layla",
     "images": [
-      { "nftIndex": 0, "originalIndex": 2, "fileId": "13ZshzOUw8hO81dkvFvcq-vh7-LsArbYC", "fileName": "IMG_9438.JPG", "setting": "Felsen/Kueste", "description": "Stehend, Arm ueber Kopf, gruenes Dessous, Felsen + blauer Himmel" },
-      { "nftIndex": 1, "originalIndex": 8, "fileId": "1vaudzMuIjIKafNAFqC0KdiR_sWA-hW2V", "fileName": "IMG_9422.JPG", "setting": "Felsen/Kueste", "description": "An Felsen gelehnt, Blick in Himmel, entspannt" },
-      { "nftIndex": 2, "originalIndex": 13, "fileId": "18pggGdglJMfpCHYd9Zz2F_Y9JUsuXCeh", "fileName": "IMG_9421.JPG", "setting": "Felsen/Kueste", "description": "Verfuehrerisch sitzend, Blick in Kamera" },
+      { "nftIndex": 0, "originalIndex": 2, "fileId": "13ZshzOUw8hO81dkvFvcq-vh7-LsArbYC", "fileName": "IMG_9438.JPG", "setting": "Felsen/Küste", "description": "Stehend, Arm ueber Kopf, gruenes Dessous, Felsen + blauer Himmel" },
+      { "nftIndex": 1, "originalIndex": 8, "fileId": "1vaudzMuIjIKafNAFqC0KdiR_sWA-hW2V", "fileName": "IMG_9422.JPG", "setting": "Felsen/Küste", "description": "An Felsen gelehnt, Blick in Himmel, entspannt" },
+      { "nftIndex": 2, "originalIndex": 13, "fileId": "18pggGdglJMfpCHYd9Zz2F_Y9JUsuXCeh", "fileName": "IMG_9421.JPG", "setting": "Felsen/Küste", "description": "Verfuehrerisch sitzend, Blick in Kamera" },
       { "nftIndex": 3, "originalIndex": 27, "fileId": "1xJy-Ix9dor2fCRL7qe3lSLjY4tkDVem9", "fileName": "IMG_9390.JPG", "setting": "Strand", "description": "Ruecken zur Kamera, Arm im Nacken, Bikini" },
       { "nftIndex": 4, "originalIndex": 32, "fileId": "1mnlj64AABTBc7sqe3SD4bh6CsAMehsGu", "fileName": "IMG_9386.JPG", "setting": "Strand", "description": "Steht aufrecht, Blick zur Seite" },
       { "nftIndex": 5, "originalIndex": 39, "fileId": "1v7G93_4veg2OF-a1W3VF0bSXjRjKJcTN", "fileName": "IMG_9383.JPG", "setting": "Strand", "description": "Sonnenbrille, Bikini, stehend" },

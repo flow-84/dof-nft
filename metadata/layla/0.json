@@ -1,6 +1,6 @@
 {
   "name": "Layla Sticker #1",
-  "description": "Layla posiert mit Arm ueber Kopf auf Felsen an der Kueste — gruenes Dessous, blauer Himmel. Mehr von Layla: https://tinyurl.com/2cframgd",
+  "description": "Layla posiert mit Arm über Kopf auf Felsen an der Küste — grünes Dessous, blauer Himmel. Mehr von Layla: https://tinyurl.com/2cframgd",
   "image": "https://raw.githubusercontent.com/flow-84/dof-nft/main/metadata/layla/images/0.jpg",
   "attributes": [
     {
@@ -17,7 +17,7 @@
     },
     {
       "trait_type": "Setting",
-      "value": "Felsen/Kueste"
+      "value": "Felsen/Küste"
     }
   ]
 }
