@@ -1,6 +1,6 @@
 {
-  "name": "Layla Sticker #2",
-  "description": "Layla lehnt entspannt an einem Felsen und blickt in den Himmel — natürlich und verträumt. Mehr von Layla: https://tinyurl.com/2cframgd",
+  "name": "Layla #2",
+  "description": "Lost in thought. Mehr von Layla: https://tinyurl.com/2cframgd",
   "image": "https://raw.githubusercontent.com/flow-84/dof-nft/main/metadata/layla/images/1.png",
   "attributes": [
     {
@@ -8,12 +8,12 @@
       "value": "Layla"
     },
     {
-      "trait_type": "Sticker Nr.",
+      "trait_type": "Edition",
       "value": "2"
     },
     {
       "trait_type": "Typ",
-      "value": "Gratis"
+      "value": "Free"
     },
     {
       "trait_type": "Setting",

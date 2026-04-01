@@ -1,6 +1,6 @@
 {
-  "name": "Christine Sticker #1",
-  "description": "Christine lächelt direkt in die Kamera — ein warmes, einladendes Portrait. Mehr von Christine: https://tinyurl.com/2952mt79",
+  "name": "Christine #1",
+  "description": "Hey you. Mehr von Christine: https://tinyurl.com/2952mt79",
   "image": "https://raw.githubusercontent.com/flow-84/dof-nft/main/metadata/christine/images/0.png",
   "attributes": [
     {
@@ -8,12 +8,12 @@
       "value": "Christine"
     },
     {
-      "trait_type": "Sticker Nr.",
+      "trait_type": "Edition",
       "value": "1"
     },
     {
       "trait_type": "Typ",
-      "value": "Gratis"
+      "value": "Free"
     },
     {
       "trait_type": "Setting",

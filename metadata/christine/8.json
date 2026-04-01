@@ -1,6 +1,6 @@
 {
-  "name": "Christine Sticker #9",
-  "description": "Christine sitzt lächelnd im Gras — natürlich, entspannt und lebensfroh. Mehr von Christine: https://tinyurl.com/2952mt79",
+  "name": "Christine #9",
+  "description": "Green escape. Mehr von Christine: https://tinyurl.com/2952mt79",
   "image": "https://raw.githubusercontent.com/flow-84/dof-nft/main/metadata/christine/images/8.png",
   "attributes": [
     {
@@ -8,7 +8,7 @@
       "value": "Christine"
     },
     {
-      "trait_type": "Sticker Nr.",
+      "trait_type": "Edition",
       "value": "9"
     },
     {

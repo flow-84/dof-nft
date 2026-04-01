@@ -82,7 +82,7 @@ function createFrameSvg(modelName: string, stickerNum: number, isFree: boolean):
   </g>
 
   <!-- NFT collection label (bottom center) -->
-  <text x="${w / 2}" y="${h - fw - 16}" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="rgba(255,255,255,0.55)" text-anchor="middle" letter-spacing="2.5">NFT STICKER COLLECTION</text>
+  <text x="${w / 2}" y="${h - fw - 16}" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="rgba(255,255,255,0.55)" text-anchor="middle" letter-spacing="2.5">NFT COLLECTION</text>
 </svg>`;
 }
 

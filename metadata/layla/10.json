@@ -1,6 +1,6 @@
 {
-  "name": "Layla Sticker #11",
-  "description": "Layla lächelt mit Brille und Ohrringen — Persönlichkeit pur. Mehr von Layla: https://tinyurl.com/2cframgd",
+  "name": "Layla #11",
+  "description": "Just me. Mehr von Layla: https://tinyurl.com/2cframgd",
   "image": "https://raw.githubusercontent.com/flow-84/dof-nft/main/metadata/layla/images/10.png",
   "attributes": [
     {
@@ -8,7 +8,7 @@
       "value": "Layla"
     },
     {
-      "trait_type": "Sticker Nr.",
+      "trait_type": "Edition",
       "value": "11"
     },
     {

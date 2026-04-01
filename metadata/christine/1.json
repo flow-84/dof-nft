@@ -1,6 +1,6 @@
 {
-  "name": "Christine Sticker #2",
-  "description": "Christine sitzt auf einer Steinmauer im Sommerkleid — entspannt in der Natur. Mehr von Christine: https://tinyurl.com/2952mt79",
+  "name": "Christine #2",
+  "description": "Summer in the city. Mehr von Christine: https://tinyurl.com/2952mt79",
   "image": "https://raw.githubusercontent.com/flow-84/dof-nft/main/metadata/christine/images/1.png",
   "attributes": [
     {
@@ -8,12 +8,12 @@
       "value": "Christine"
     },
     {
-      "trait_type": "Sticker Nr.",
+      "trait_type": "Edition",
       "value": "2"
     },
     {
       "trait_type": "Typ",
-      "value": "Gratis"
+      "value": "Free"
     },
     {
       "trait_type": "Setting",

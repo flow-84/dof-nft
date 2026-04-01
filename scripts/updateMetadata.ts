@@ -14,34 +14,34 @@ const ofLinks: Record<string, string> = {
     christine: 'https://tinyurl.com/2952mt79',
 };
 
-const stickerDescriptions: Record<string, string[]> = {
+const descriptions: Record<string, string[]> = {
     layla: [
-        'Layla posiert mit Arm über Kopf auf Felsen an der Küste — grünes Dessous, blauer Himmel.',
-        'Layla lehnt entspannt an einem Felsen und blickt in den Himmel — natürlich und verträumt.',
-        'Layla sitzt verführerisch auf Küstenfelsen und blickt direkt in die Kamera.',
-        'Layla am Strand — Rücken zur Kamera, Arm im Nacken, Bikini, Meerblick.',
-        'Layla steht aufrecht am Strand und blickt zur Seite — Bikini, Sand, Wellen.',
-        'Layla posiert am Strand mit Sonnenbrille und Bikini — Sommer-Vibes.',
-        'Layla liegt in Rückenlage auf dem Bett und blickt in die Kamera — intim und direkt.',
-        'Layla auf dem Bett mit Beinen hochgestreckt — kreative, verspielte Pose.',
-        'Layla sitzt entspannt auf dem Bett in schwarzem Dessous — elegant und sinnlich.',
-        'Layla macht ein Spiegel-Selfie in schwarzer Unterwäsche — lässig und authentisch.',
-        'Layla lächelt mit Brille und Ohrringen — Persönlichkeit pur.',
-        'Layla posiert mit Arm im Nacken in orangefarbenem Zweiteiler — stylish und selbstbewusst.',
+        'Wild coast vibes.',
+        'Lost in thought.',
+        'Confidence on the rocks.',
+        'Ocean breeze.',
+        'Sandy days.',
+        'Sun-kissed.',
+        'Eye contact.',
+        'Playful energy.',
+        'After dark.',
+        'Mirror, mirror.',
+        'Just me.',
+        'Golden hour.',
     ],
     christine: [
-        'Christine lächelt direkt in die Kamera — ein warmes, einladendes Portrait.',
-        'Christine sitzt auf einer Steinmauer im Sommerkleid — entspannt in der Natur.',
-        'Christine am Strand, Rücken zur Kamera — blond, Meer, Sommergefühl.',
-        'Christine posiert mit gelbem Handtuch — frisch und natürlich.',
-        'Christine sitzt entspannt auf dem Sofa in weißem Oberteil — gemütlich und nahbar.',
-        'Christine im Spiegel in weißer Spitze-Dessous — elegant und feminin.',
-        'Christine im Lotussitz auf der Yogamatte — sportlich und ausgeglichen.',
-        'Christine liegt auf einem Strandtuch und blickt in die Kamera — Strand-Feeling.',
-        'Christine sitzt lächelnd im Gras — natürlich, entspannt und lebensfroh.',
-        'Christine im Bikini mit Sonnenbrille, lächelnd — Sommer, Sonne, gute Laune.',
-        'Christine in weißer Spitze-Unterwäsche auf einem Stuhl — elegant und sinnlich.',
-        'Christine im Leoparden-Print auf weißer Bank — mutig und individuell.',
+        'Hey you.',
+        'Summer in the city.',
+        'Beach mode.',
+        'Fresh & fearless.',
+        'Cozy Sunday.',
+        'Reflection.',
+        'Inner balance.',
+        'Vitamin sea.',
+        'Green escape.',
+        'Good vibes only.',
+        'Elegance.',
+        'Wild side.',
     ],
 };
 
@@ -50,7 +50,7 @@ function updateMetadata() {
         const model = selection[modelKey];
         const modelDir = path.join(METADATA_DIR, modelKey);
         const modelName = model.model as string;
-        const descriptions = stickerDescriptions[modelKey];
+        const modelDescriptions = descriptions[modelKey];
 
         // Update meta.json (collection metadata)
         const collectionPath = path.join(modelDir, 'meta.json');
@@ -66,13 +66,13 @@ function updateMetadata() {
             const stickerNum = i + 1;
 
             const item = {
-                name: `${modelName} Sticker #${stickerNum}`,
-                description: `${descriptions[i]} Mehr von ${modelName}: ${ofLinks[modelKey]}`,
+                name: `${modelName} #${stickerNum}`,
+                description: `${modelDescriptions[i]} Mehr von ${modelName}: ${ofLinks[modelKey]}`,
                 image: `${BASE_URL}/${modelKey}/images/${i}.png`,
                 attributes: [
                     { trait_type: 'Model', value: modelName },
-                    { trait_type: 'Sticker Nr.', value: String(stickerNum) },
-                    { trait_type: 'Typ', value: isFree ? 'Gratis' : 'Premium' },
+                    { trait_type: 'Edition', value: String(stickerNum) },
+                    { trait_type: 'Typ', value: isFree ? 'Free' : 'Premium' },
                     { trait_type: 'Setting', value: model.images[i].setting },
                 ],
             };

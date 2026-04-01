@@ -1,6 +1,6 @@
 {
-  "name": "Christine Sticker #3",
-  "description": "Christine am Strand, Rücken zur Kamera — blond, Meer, Sommergefühl. Mehr von Christine: https://tinyurl.com/2952mt79",
+  "name": "Christine #3",
+  "description": "Beach mode. Mehr von Christine: https://tinyurl.com/2952mt79",
   "image": "https://raw.githubusercontent.com/flow-84/dof-nft/main/metadata/christine/images/2.png",
   "attributes": [
     {
@@ -8,12 +8,12 @@
       "value": "Christine"
     },
     {
-      "trait_type": "Sticker Nr.",
+      "trait_type": "Edition",
       "value": "3"
     },
     {
       "trait_type": "Typ",
-      "value": "Gratis"
+      "value": "Free"
     },
     {
       "trait_type": "Setting",
