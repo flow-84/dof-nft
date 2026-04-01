@@ -83,19 +83,15 @@ contract NftItem {
         return value - (storageFee + gasConsumption);
     }
 
+    // Returns raw individual_content (sticker_id as string).
+    // The collection's get_nft_content() combines base_url + sticker_id + ".json".
     get fun get_nft_data(): GetNftData {
-        let b: StringBuilder = beginString();
-        let collectionData: String = (self.individual_content!!).asSlice().asString();
-        b.append(collectionData);
-        b.append(self.item_index.toString());
-        b.append(".json");
-
         return GetNftData{
             is_initialized: self.is_initialized,
             index: self.item_index,
             collection_address: self.collection_address,
             owner_address: self.owner!!,
-            individual_content: b.toCell()
+            individual_content: self.individual_content!!
         };
     }
 }

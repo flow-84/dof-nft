@@ -41,23 +41,27 @@ message(0xa8cb00ad) ReportRoyaltyParams {
     destination: Address;
 }
 
-// Custom: Owner-controlled minting
+// Public mint — anyone can buy a sticker
+message PublicMint {
+    query_id: Int as uint64;
+    sticker_id: Int as uint32;
+}
+
+// Owner airdrop — owner mints to a specific address
 message MintNft {
     query_id: Int as uint64;
-    item_index: Int as uint32;
+    sticker_id: Int as uint32;
     item_owner: Address;
-    individual_content: Cell;
 }
 
-message BatchMint {
+// Owner withdraw collected TON
+message Withdraw {
     query_id: Int as uint64;
-    items: map<Int, MintItem>;
-    items_count: Int as uint32;
 }
 
-struct MintItem {
-    item_owner: Address;
-    individual_content: Cell;
+// Owner toggle mint on/off
+message ToggleMint {
+    query_id: Int as uint64;
 }
 
 // Logging
@@ -86,4 +90,13 @@ struct GetNftData {
     collection_address: Address;
     owner_address: Address;
     individual_content: Cell;
+}
+
+struct MintConfig {
+    mint_price: Int;
+    max_per_sticker: Int;
+    total_stickers: Int;
+    free_sticker_count: Int;
+    is_active: Bool;
+    next_item_index: Int;
 }

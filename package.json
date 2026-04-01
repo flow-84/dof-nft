@@ -6,7 +6,7 @@
     "build": "npx blueprint build",
     "test": "jest",
     "deploy": "npx blueprint run deployCollection",
-    "mint": "npx blueprint run mintBatch"
+    "airdrop": "npx blueprint run airdrop"
   },
   "devDependencies": {
     "@tact-lang/compiler": "^1.5.0",
