@@ -55,7 +55,7 @@ function updateMetadata() {
         // Update meta.json (collection metadata)
         const collectionPath = path.join(modelDir, 'meta.json');
         const collection = JSON.parse(fs.readFileSync(collectionPath, 'utf8'));
-        collection.image = `${BASE_URL}/${modelKey}/images/0.jpg`;
+        collection.image = `${BASE_URL}/${modelKey}/images/0.png`;
         fs.writeFileSync(collectionPath, JSON.stringify(collection, null, 2) + '\n');
         console.log(`${modelName}: meta.json updated`);
 
@@ -68,7 +68,7 @@ function updateMetadata() {
             const item = {
                 name: `${modelName} Sticker #${stickerNum}`,
                 description: `${descriptions[i]} Mehr von ${modelName}: ${ofLinks[modelKey]}`,
-                image: `${BASE_URL}/${modelKey}/images/${i}.jpg`,
+                image: `${BASE_URL}/${modelKey}/images/${i}.png`,
                 attributes: [
                     { trait_type: 'Model', value: modelName },
                     { trait_type: 'Sticker Nr.', value: String(stickerNum) },

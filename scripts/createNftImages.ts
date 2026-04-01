@@ -86,6 +86,15 @@ function createFrameSvg(modelName: string, stickerNum: number, isFree: boolean):
 </svg>`;
 }
 
+function createRoundedMaskSvg(): string {
+    const w = OUTPUT_WIDTH;
+    const h = OUTPUT_HEIGHT;
+    const cr = CORNER_RADIUS;
+    return `<svg width="${w}" height="${h}" xmlns="http://www.w3.org/2000/svg">
+  <rect width="${w}" height="${h}" rx="${cr}" ry="${cr}" fill="white"/>
+</svg>`;
+}
+
 async function createNftImage(
     inputPath: string,
     outputPath: string,
@@ -96,13 +105,17 @@ async function createNftImage(
     // Resize original image to full output size (frame will overlay the edges)
     const resizedImage = await sharp(inputPath)
         .resize(OUTPUT_WIDTH, OUTPUT_HEIGHT, { fit: 'cover', position: 'attention' })
+        .ensureAlpha()
         .toBuffer();
 
     // Create the frame overlay SVG (transparent center, opaque frame border)
     const frameSvg = createFrameSvg(modelName, stickerIndex, isFree);
 
-    // Composite: image as base → frame overlay on top
-    await sharp(resizedImage)
+    // Create rounded rect mask for clipping corners
+    const maskSvg = createRoundedMaskSvg();
+
+    // Composite: image + frame overlay, then apply rounded mask
+    const composited = await sharp(resizedImage)
         .composite([
             {
                 input: Buffer.from(frameSvg),
@@ -110,7 +123,18 @@ async function createNftImage(
                 top: 0,
             },
         ])
-        .jpeg({ quality: 92 })
+        .toBuffer();
+
+    // Apply rounded mask: dest-in keeps only pixels where mask is white
+    await sharp(composited)
+        .ensureAlpha()
+        .composite([
+            {
+                input: Buffer.from(maskSvg),
+                blend: 'dest-in',
+            },
+        ])
+        .png()
         .toFile(outputPath);
 }
 
@@ -131,7 +155,7 @@ async function main() {
                 continue;
             }
 
-            const outputPath = path.join(nftDir, `${img.nftIndex}.jpg`);
+            const outputPath = path.join(nftDir, `${img.nftIndex}.png`);
             const isFree = img.nftIndex < 3;
 
             try {
