@@ -38,7 +38,7 @@ const stickerDescriptions: Record<string, string[]> = {
         'Christine im Spiegel in weißer Spitze-Dessous — elegant und feminin.',
         'Christine im Lotussitz auf der Yogamatte — sportlich und ausgeglichen.',
         'Christine liegt auf einem Strandtuch und blickt in die Kamera — Strand-Feeling.',
-        'Christine in der Badewanne mit Seifenschaum — entspannt und verträumt.',
+        'Christine sitzt lächelnd im Gras — natürlich, entspannt und lebensfroh.',
         'Christine im Bikini mit Sonnenbrille, lächelnd — Sommer, Sonne, gute Laune.',
         'Christine in weißer Spitze-Unterwäsche auf einem Stuhl — elegant und sinnlich.',
         'Christine im Leoparden-Print auf weißer Bank — mutig und individuell.',

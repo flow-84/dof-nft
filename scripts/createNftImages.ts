@@ -3,7 +3,7 @@
  * Usage: npx tsx scripts/createNftImages.ts
  *
  * Design:
- * - 1024x1024 square output
+ * - 1024x1365 portrait output (3:4 ratio, matches original photos)
  * - Purple gradient frame (#9335B6 → #b200ff) matching DOF branding
  * - Model name badge (top)
  * - Sticker number badge (top-right corner)
@@ -16,7 +16,8 @@ import * as path from 'path';
 
 const selection = JSON.parse(fs.readFileSync(path.join(__dirname, 'nft-selection.json'), 'utf8'));
 
-const OUTPUT_SIZE = 1024;
+const OUTPUT_WIDTH = 1024;
+const OUTPUT_HEIGHT = 1365;
 const FRAME_WIDTH = 28;
 const CORNER_RADIUS = 32;
 
@@ -25,8 +26,8 @@ const CORNER_RADIUS = 32;
  * Uses fill-rule="evenodd" on a compound path so the inner area is see-through.
  */
 function createFrameSvg(modelName: string, stickerNum: number, isFree: boolean): string {
-    const w = OUTPUT_SIZE;
-    const h = OUTPUT_SIZE;
+    const w = OUTPUT_WIDTH;
+    const h = OUTPUT_HEIGHT;
     const fw = FRAME_WIDTH;
     const cr = CORNER_RADIUS;
     const icr = cr - 10; // inner corner radius
@@ -94,7 +95,7 @@ async function createNftImage(
 ): Promise<void> {
     // Resize original image to full output size (frame will overlay the edges)
     const resizedImage = await sharp(inputPath)
-        .resize(OUTPUT_SIZE, OUTPUT_SIZE, { fit: 'cover', position: 'attention' })
+        .resize(OUTPUT_WIDTH, OUTPUT_HEIGHT, { fit: 'cover', position: 'attention' })
         .toBuffer();
 
     // Create the frame overlay SVG (transparent center, opaque frame border)
